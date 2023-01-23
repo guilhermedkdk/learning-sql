@@ -1,4 +1,4 @@
-create table if not exists curso (
+create table if not exists cursos (
 	nome varchar(30) not null unique,
 	descricao text,
 	carga int unsigned,
@@ -6,10 +6,10 @@ create table if not exists curso (
 	ano year default '2023'
 ) default charset = utf8;
 
-alter table curso
+alter table cursos
 add column id int first;
 
-alter table curso
+alter table cursos
 add primary key (id);
 
-desc curso
+desc cursos
