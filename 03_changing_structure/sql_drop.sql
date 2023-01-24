@@ -1,7 +1,7 @@
 create table if not exists teste (
-id int,
-nome varchar(30),
-idade int
+	id int,
+	nome varchar(30),
+	idade int
 );
 
 insert into teste value
